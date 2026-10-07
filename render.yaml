@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: axion-health-nutri
+    runtime: static
+    buildCommand: mkdir -p public && cp index.html public/index.html
+    staticPublishPath: ./public
+    autoDeployTrigger: commit
